@@ -5,7 +5,23 @@
     <title>Angular Material</title>
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
   </head>
-  <body>
+  <body ng-app="demoApp">
+
+  <md-toolbar>
+    <h1>sup</h1>
+  </md-toolbar>
+
+
+
    <script src="node_modules/angular/angular.min.js"></script>
+   <script src="node_modules/angular-animate/angular-animate.js"></script>
+   <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+   <script src="node_modules/angular-material/angular-material.min.js"></script>
+   <script>
+     angular.module('demoApp', ['ngMaterial'])
+       .run(function(){
+         console.log('App is ready');
+       });
+   </script>
   </body>
 </html>
